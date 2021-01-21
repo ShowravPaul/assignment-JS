@@ -1,4 +1,5 @@
 // kilometer to meter convert
+
 function kilometerToMeter(kilometer){
     if(kilometer < 0){
         return "Invalid input!! Enter a positve number.";
@@ -8,7 +9,10 @@ function kilometerToMeter(kilometer){
     return meter;
 }
 
+
+
 // finding total cost of some smart gadgets
+
 function budgetCalculator(watch, phone, laptop){
     if(watch < 0 || phone < 0 || laptop < 0){
         return "Invalid input!! All inputs should be positive number.";
@@ -18,7 +22,10 @@ function budgetCalculator(watch, phone, laptop){
     return totalCost;
 }
 
+
+
 // finding total cost of hotel rent
+
 function hotelCost(day){
     if(day < 0){
         return "Invalid input!! Enter a positive integer.";
@@ -38,8 +45,15 @@ function hotelCost(day){
     return totalCost;
 }
 
+
+
 // finding biggest name among friends
+
 function megaFriend(friends){
+    for(var i=0; i<friends.length; i++){
+        if(typeof(friends[i]) != typeof("abc")) return "All elements of this array are not string!";
+    }
+
     if(friends.length == 0){
         return "Empty array!! There is no name!";
     }

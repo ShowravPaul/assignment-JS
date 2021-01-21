@@ -1,2 +1,1 @@
-# assignment-JS
-# assignment-JS
+# assignment.js
